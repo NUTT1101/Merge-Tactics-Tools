@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background: #101820;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+h1 {
+  margin-bottom: 4px;
+}
+h2 {
+  color: #4fff4f;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+#board {
+  position: relative;
+  width: 400px;
+  height: 460px;
+}
+.hex {
+  width: 60px;
+  height: 52px;
+  background: #3a3f4b;
+  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+}
+.hex img {
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+}
+#card-pool {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.card {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  overflow:visible;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-align: center;
+}
+.card.selected {
+  border-color: #4fff4f;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#traits {
+  margin-top: 15px;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.4;
+}
+#controls {
+  margin-top: 10px;
+}
+button {
+  background: #4a90e2;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 4px;
+}
